@@ -1,0 +1,136 @@
+.w3Content {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #757575;
+    padding-top: 100px;
+    padding-bottom: 64px;
+    font-family: inherit;
+}
+
+.w3TextLightGrey {
+    color: #f1f1f1;
+    font-family: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.8em;
+}
+
+.w3Opacity {
+    opacity: 0.8;
+}
+
+.w3Wide {
+    letter-spacing: 4px;
+    padding: 16px 0;
+    color: #fff;
+}
+
+.w3White {
+    background-color: #fff;
+}
+
+.w3PaddingLarge:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.w3DarkGrey {
+    background-color: #adc8f4;
+    font-size: 30px;
+}
+
+.w3Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w3Center {
+    text-align: center;
+}
+
+.w3Section {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.w3Quarter {
+    flex: 25%;
+    max-width: 25%;
+    padding: 16px;
+}
+
+.w3RowPadding {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.w3RowPadding h2{
+    color: #000;
+    font-size: 30px;
+    padding-bottom: 24px !important;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+}
+
+.w3Half {
+    flex: 49%;
+    max-width: 100%;
+}
+
+.w3Half li{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    border-bottom: #dedddd 1px solid;
+}
+
+.w3LightGrey {
+    color: #000 !important;
+    background-color: #adc8f4 !important;
+}
+
+.w3PaddingLarge {
+    padding: 24px;
+}
+
+.w3Ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.w3HoverOpacityOff:hover {
+    opacity: 1;
+}
+
+.w3Large {
+    font-size: 18px;
+}
+
+.w3Circle {
+    border-radius: 50%;
+}
+
+.w3MarginRight {
+    margin-right: 16px !important;
+}
+
+.w3Left {
+    float: left !important;
+}
+
+@media (max-width: 1200px) {
+    .w3Quarter {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .w3Content {
+        margin: 20px;
+    }
+    .w3Half {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
