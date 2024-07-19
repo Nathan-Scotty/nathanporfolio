@@ -22,7 +22,9 @@ export default function Home() {
 
                 <meta property="og:title" content="Porfolio | Home" />
                 <meta property="og:description" content="I thrive on solving complex technical challenges" />
-                <meta property="og:image" content="/assets/bgprofile.jpg" />
+                <meta property="og:image" content="/logoNathan.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
             </Head>
             <Element name="home" className={styles.home_container}>
                 <div className={`${styles.container} ${styles.homeIndex}`}>

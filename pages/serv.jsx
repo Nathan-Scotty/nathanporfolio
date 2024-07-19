@@ -11,7 +11,9 @@ export default function Service() {
 
                 <meta property="og:title" content="Porfolio | Services" />
                 <meta property="og:description" content="I thrive on solving complex technical challenges" />
-                <meta property="og:image" content="../assets/bgprofile.jpg" />
+                <meta property="og:image" content="/logoNathan.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
             </Head>
             <Services />
         </>
