@@ -143,35 +143,6 @@
     margin-right: 0.7rem;
 }
 
-.social_media {
-    padding: 2rem 0 0 0;
-}
-
-.social_media p {
-    color: #333;
-}
-
-.social_icons {
-    display: flex;
-    margin-top: 0.5rem;
-}
-
-.social_icons a {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #1abc9c, #149279);
-    color: #fff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 0.5rem;
-    transition: 0.3s;
-}
-
-.social_icons a:hover {
-    transform: scale(1.05);
-}
-
 .contact_info:before {
     content: "";
     position: absolute;

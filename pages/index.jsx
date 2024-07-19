@@ -26,7 +26,7 @@ export default function Home() {
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
             </Head>
-            <Element name="home" className={styles.home_container}>
+            <Element name="home">
                 <div className={`${styles.container} ${styles.homeIndex}`}>
 
                     <h1 className={`${styles.home_title} ${styles.text_cs}`}>
@@ -46,7 +46,7 @@ export default function Home() {
                     </h1>
 
                     <p className={`${styles.home_subtitle} ${styles.text_cs}`}>
-                        My Name Is, <span>Nathan Musoko</span>
+                        My Name Is <span>Nathan Musoko</span>
                     </p>
                     <div className={styles.home_img_wrapper}>
                         <div className={styles.home_banner}>

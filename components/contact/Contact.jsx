@@ -91,21 +91,6 @@ export default function Contact() {
                             <p>qualitechoisie13@gmail.com</p>
                         </div>
                     </div>
-
-                    <div className={styles.social_media}>
-                        <p>Connect with us :</p>
-                        <div className={styles.social_icons}>
-                            <a href="#">
-                                <FaTwitter />
-                            </a>
-                            <a href="#">
-                                <FaInstagram />
-                            </a>
-                            <a href="#">
-                                <FaLinkedin />
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <div className={styles.contact_form}>
