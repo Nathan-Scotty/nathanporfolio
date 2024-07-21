@@ -5,6 +5,7 @@ import Project4 from '../assets/project4.jpeg';
 import Project5 from '../assets/project5.jpg';
 import Project6 from '../assets/project6.jpg';
 
+import videoScr from '../public/videos/recording.mp4';
 import Testimonial1 from '../assets/testimonial1.jpg';
 import Testimonial2 from '../assets/testimonial2.jpg';
 import Testimonial3 from '../assets/testimonial3.jpg';
@@ -17,43 +18,6 @@ import game from '../assets/game.svg'
 
 const Data = () => {
   return {
-    links: [{
-      name: 'Home',
-      path: 'home',
-    },
-    {
-      name: 'Services',
-      path: 'services',
-    },
-    {
-      name: 'Skills',
-      path: 'skills',
-    },
-    {
-      name: 'Works',
-      path: 'work',
-    },
-    {
-      name: 'Resume',
-      path: 'resume',
-    },
-    {
-      name: 'Testimonials',
-      path: 'testimonial',
-    },
-    {
-      name: 'Pricing',
-      path: 'pricing',
-    },
-    {
-      name: 'Blog',
-      path: 'blog',
-    },
-    {
-      name: 'Contact',
-      path: 'contact',
-    },],
-
     services: [{
       id: 1,
       name: 'Web Development',
@@ -87,54 +51,68 @@ const Data = () => {
       image: ads,
     },],
 
-    skills: [{
-      id: 1,
-      img: Project1,
-      category: 'Branding',
-      title: 'Zorro',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
-    {
-      id: 2,
-      img: Project2,
-      category: 'UI UX Design',
-      title: 'Gooir',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
-    {
-      id: 3,
-      img: Project3,
-      category: 'Development',
-      title: 'Explore',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
-    {
-      id: 4,
-      img: Project4,
-      category: 'Photography',
-      title: 'Mozar',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
-    {
-      id: 5,
-      img: Project5,
-      category: 'Development',
-      title: 'Stay Fit',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
-    {
-      id: 6,
-      img: Project6,
-      category: 'Branding',
-      title: 'Kana',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-    },],
+    skills: [
+      {
+        id: 1,
+        name: 'Web Development',
+        category: 'Branding',
+        linkdemo: '',
+        linkgit: '',
+        title: 'Web Design & Logo',
+        description:
+          'Web designers craft the overall vision & plan for a website layout, ensuring a user-friendly interface and engaging user experience. Professional logo development: Business, Company, or Personal, tailored to reflect your brand identity and values.',
+        video: videoScr, // Update this with the path to your video
+      },
+      {
+        id: 2,
+        category: 'UI UX Design',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        title: 'Gooir',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        video: videoScr,
+      },
+      {
+        id: 3,
+        category: 'Development',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        title: 'Explore',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        video: videoScr,
+      },
+      {
+        id: 4,
+        category: 'Photography',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        title: 'Mozar',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        video: videoScr,
+      },
+      {
+        id: 5,
+        category: 'Development',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        title: 'Stay Fit',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        video: videoScr,
+      },
+      {
+        id: 6,
+        category: 'Branding',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        title: 'Kana',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        video: videoScr,
+      },],
 
     projects: [{
       id: 1,
