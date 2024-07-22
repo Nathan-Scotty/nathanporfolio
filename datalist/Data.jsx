@@ -56,18 +56,18 @@ const Data = () => {
         id: 1,
         name: 'Web Development',
         category: 'Branding',
-        linkdemo: '',
-        linkgit: '',
+        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkgit: 'https://github.com/Nathan-Scotty/server-nath',
         title: 'Web Design & Logo',
         description:
           'Web designers craft the overall vision & plan for a website layout, ensuring a user-friendly interface and engaging user experience. Professional logo development: Business, Company, or Personal, tailored to reflect your brand identity and values.',
-        video: videoScr, // Update this with the path to your video
+        video: videoScr,
       },
       {
         id: 2,
         category: 'UI UX Design',
-        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
-        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkdemo: 'https://ultimate-industrials.vercel.app/',
+        linkgit: 'https://github.com/Nathan-Scotty/ultimate',
         title: 'Gooir',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -76,8 +76,8 @@ const Data = () => {
       {
         id: 3,
         category: 'Development',
-        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
-        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkdemo: 'https://ottawa-christian-tabernacle.vercel.app/',
+        linkgit: 'https://github.com/MR-C0DE/ottawa_christian_tabernacle',
         title: 'Explore',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -86,8 +86,8 @@ const Data = () => {
       {
         id: 4,
         category: 'Photography',
-        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
-        linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkdemo: 'https://nathan-scotty.github.io/dongeongame/',
+        linkgit: 'https://github.com/Nathan-Scotty/dongeongame',
         title: 'Mozar',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
@@ -106,7 +106,7 @@ const Data = () => {
       {
         id: 6,
         category: 'Branding',
-        linkdemo: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
+        linkdemo: 'https://www.taskflow-labs.com/',
         linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
         title: 'Kana',
         description:
