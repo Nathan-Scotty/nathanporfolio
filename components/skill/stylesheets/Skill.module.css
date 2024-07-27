@@ -2,14 +2,14 @@
     max-width: 980px;
     margin: 0 auto;
     text-align: justify;
-    color: #757575;
+    color: var(--page-bg-color);
     padding-top: 100px;
     padding-bottom: 64px;
     font-family: inherit;
 }
 
 .w3TextLightGrey {
-    color: #f1f1f1;
+    color: var(--page-text-color);
     font-family: inherit;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -23,16 +23,21 @@
 .w3Wide {
     letter-spacing: 4px;
     padding: 16px 0;
-    color: #fff;
+    color: var(--page-text-color);
 }
 
 .w3White {
-    background-color: #fff;
+    background-color: var(--header-bg-color);
+}
+
+.w3PaddingLarge{
+    background-color: var(--page-text-color);
+    color: var(--page-bg-color);
 }
 
 .w3PaddingLarge:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--page-bg-color);
+    color: var(--page-text-color);
 }
 
 .w3DarkGrey {
@@ -67,7 +72,7 @@
 }
 
 .w3RowPadding h2{
-    color: #000;
+    color: var(--page-bg-color);
     font-size: 30px;
     padding-bottom: 24px !important;
     font-weight: 400;

@@ -1,0 +1,23 @@
+.layout[data-theme="light"] {
+    --header-bg-color: #000;
+    --header-text-color: #fff;
+    --page-bg-color: #fff;
+    --page-text-color: #000;
+    --social-link-color: #000;
+    --scroll-bg: #e2e0e0;
+}
+
+.layout[data-theme="dark"] {
+    --header-bg-color: #f1f1f1f1;
+    --header-text-color: #000;
+    --page-bg-color: #000;
+    --page-text-color: #fff;
+    --social-link-color: #fff;
+    --scroll-bg: #30353b;
+}
+
+.layout {
+    background-color: var(--page-bg-color);
+    color: var(--page-text-color);
+}
+

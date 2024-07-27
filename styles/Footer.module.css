@@ -1,6 +1,5 @@
 .footer {
-    background: #30353b;
-    color: #fff;
+    background: var(--scroll-bg);
     padding: 20px 0;
     text-align: center;
 }

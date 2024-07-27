@@ -24,7 +24,7 @@
 }
 
 .portfolio_list_item {
-    color: #ffffff;
+    color: var(--page-text-color);
     font-size: 13px;
     font-weight: 700;
     position: relative;
@@ -140,17 +140,17 @@
 }
 
 .link {
-    color: black;
+    color: var(--page-bg-color);
     text-decoration: none;
-    background-color: white;
+    background-color: var(--page-text-color);
     padding: 20px 50px;
     border-radius: 5%;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .link:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--page-bg-color);
+    color: var(--page-text-color);
 }
 
 @media screen and (max-width: 1200px) {

@@ -54,7 +54,7 @@ const Skill = () => {
                         </li>
                         <li className={`${styles.w3LightGrey} ${styles.w3Padding24}`}>
                             <Link to="contact" smooth={true} duration={500}>
-                                <button className={`${styles.w3Button} ${styles.w3White} ${styles.w3PaddingLarge}`}>
+                                <button className={`${styles.w3Button} ${styles.w3PaddingLarge}`}>
                                     Sign Up
                                 </button>
                             </Link>
@@ -74,7 +74,7 @@ const Skill = () => {
                         </li>
                         <li className={`${styles.w3LightGrey} ${styles.w3Padding24}`}>
                             <Link to="contact" smooth={true} duration={500}>
-                                <button className={`${styles.w3Button} ${styles.w3White} ${styles.w3PaddingLarge}`}>
+                                <button className={`${styles.w3Button} ${styles.w3PaddingLarge}`}>
                                     Sign Up
                                 </button>
                             </Link>

@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import { Link } from 'react-scroll';
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { useTheme } from "./ThemeProvider";
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const [scrollNav, setScrollNav] = useState(false);
+    const [theme, setTheme] = useTheme();
 
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -34,6 +36,10 @@ export default function Header() {
 
     const handleLinkClick = () => {
         setShowMenu(false);
+    };
+
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
     };
 
     return (
@@ -85,8 +91,8 @@ export default function Header() {
                     </div>
                 </div>
                 <div className={styles.nav_btns}>
-                    <div className={styles.theme_toggler}>
-                        <BsSun />
+                    <div className={styles.theme_toggler} onClick={toggleTheme}>
+                        {theme === 'light' ? <BsSun /> : <BsMoon />}
                     </div>
                     <div className={`${showMenu ? `${styles.nav_toggle} ${styles.animate_toggle}` : styles.nav_toggle}`} onClick={handleMenuToggle}>
                         <span></span>

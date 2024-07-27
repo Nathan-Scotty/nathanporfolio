@@ -54,7 +54,7 @@ export default function Home() {
                         </div>
                         <p className={`${styles.home_data} ${styles.home_data_one}`}>
                             <span className={styles.text_lg}>
-                                4 <b>+</b>
+                                3 <b>+</b>
                             </span>
                             <span className={`${styles.text_sm} ${styles.text_cs}`}>
                                 Years of <b>Experience</b>
