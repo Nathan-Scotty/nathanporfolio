@@ -2,6 +2,7 @@ import 'normalize.css/normalize.css'
 import Layout from '../components/Layout'
 import '../styles/globals.css'
 import { ThemeProvider } from '../components/ThemeProvider'
+import { LocaleProvider } from '../components/LocaleProvider'
 
 import { Roboto_Flex, Montserrat } from '@next/font/google'
 
@@ -22,10 +23,12 @@ export default function App({ Component, pageProps }) {
       }
     `}
     </style>
-    <ThemeProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <LocaleProvider>
+      <ThemeProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </LocaleProvider>
   </>
 }

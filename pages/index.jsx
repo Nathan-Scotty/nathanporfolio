@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import { Element } from 'react-scroll';
 import Head from "next/head";
+import { FormattedMessage } from "react-intl";
 
 
 export default function Home() {
@@ -30,23 +31,19 @@ export default function Home() {
                 <div className={`${styles.container} ${styles.homeIndex}`}>
 
                     <h1 className={`${styles.home_title} ${styles.text_cs}`}>
-                        <span>W</span>
-                        <span>E</span>
-                        <span>L</span>
-                        <span>C</span>
-                        <span>O</span>
-                        <span>M</span>
-                        <span>E </span>
+                        <span><FormattedMessage id="w" /></span>
+                        <span><FormattedMessage id="e" /></span>
+                        <span><FormattedMessage id="l" /></span>
+                        <span><FormattedMessage id="c" /></span>
+                        <span><FormattedMessage id="o" /></span>
+                        <span><FormattedMessage id="m" /></span>
                         <span></span>
-                        <span className={styles.han}>Y</span>
-                        <span className={styles.han}>&apos;</span>
-                        <span className={styles.han}>A</span>
-                        <span className={styles.han}>L</span>
-                        <span className={styles.han}>L</span>
+                        <span className={styles.han}><FormattedMessage id="y"/></span>
+                        <span className={styles.han}><FormattedMessage id="ll"/></span>
                     </h1>
 
                     <p className={`${styles.home_subtitle} ${styles.text_cs}`}>
-                        My Name Is <span>Nathan Musoko</span>
+                        <FormattedMessage id="name" /> <span>Nathan Musoko</span>
                     </p>
                     <div className={styles.home_img_wrapper}>
                         <div className={styles.home_banner}>
@@ -54,26 +51,15 @@ export default function Home() {
                         </div>
                         <p className={`${styles.home_data} ${styles.home_data_one}`}>
                             <span className={styles.text_lg}>
-                                3 <b>+</b>
+                                3 + 
                             </span>
                             <span className={`${styles.text_sm} ${styles.text_cs}`}>
-                                Years of <b>Experience</b>
+                                <FormattedMessage id="experience"/>
                             </span>
                         </p>
                     </div>
                     <p className={styles.home_text}>
-                        I am full-stack web, desktop and mobile app developer. Passionate and dedicated programmer with a strong 
-                        foundation in computer science and a keen eye for innovative solutions. My journey in programming has been 
-                        fueled by a love for technology and a drive to create efficient, impactful applications.
-
-                        I specialize in a variety of programming languages and frameworks, including C#, Java, PowerShell, Python, 
-                        Node.js, React/Next.js, and ASP.NET. Additionally, I have extensive experience working with databases such 
-                        as MySQL, MongoDB, and Cassandra. My diverse skill set enables me to tackle a wide range of projects, 
-                        from backend development to creating dynamic, interactive front-end interfaces.
-
-                        I strive to build software that not only meets the highest standards of functionality but also provides a 
-                        seamless user experience. Explore my work, and let&apos;s connect to discuss how we can collaborate to bring 
-                        your ideas to life
+                        <FormattedMessage id="about" />
                     </p>
                     <div className={styles.home_socials}>
                         <a href="https://github.com/Nathan-Scotty" className={styles.home_social_link}>
@@ -88,7 +74,7 @@ export default function Home() {
                     </div>
                     <Link href="/CVNathan.pdf" download="CVNathan.pdf">
                         <button className={`${styles.w3Button}`}>
-                            <FontAwesomeIcon icon={faDownload} /> Download Resume
+                            <FontAwesomeIcon icon={faDownload} /> <FormattedMessage id="resume"/>
                         </button>
                     </Link>
                 </div>

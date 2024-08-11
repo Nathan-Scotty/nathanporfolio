@@ -1,13 +1,14 @@
 import styles from './stylesheets/Contact.module.css'
-import { FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import location from '../../assets/location.png'
 import email from '../../assets/email.png'
-import phone from '../../assets/phone.png'
 import Image from 'next/image'
+import { FormattedMessage, useIntl } from 'react-intl'
 import { useEffect, useState } from 'react'
 
 
 export default function Contact() {
+
+    const intl = useIntl();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -76,9 +77,9 @@ export default function Contact() {
             <span className={styles.big_circle}></span>
             <div className={styles.form}>
                 <div className={styles.contact_info}>
-                    <h3 className={styles.title}>Let&apos;s get in touch</h3>
+                    <h3 className={styles.title}><FormattedMessage id='get_in_touch'/></h3>
                     <p className={styles.text}>
-                        I would be delighted to discuss your ideas and projects. Feel free to contact me with any questions or inquiries.
+                        <FormattedMessage id='contact_invitation'/>
                     </p>
 
                     <div className={styles.info}>
@@ -97,20 +98,20 @@ export default function Contact() {
                     <span className={`${styles.circle} ${styles.one}`}></span>
                     <span className={`${styles.circle} ${styles.two}`}></span>
                     <form id='contactForm'>
-                        <h3 className={styles.title}>Contact us</h3>
+                        <h3 className={styles.title}><FormattedMessage id='contact_us'/></h3>
                         <div className={styles.input_container}>
-                            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" className={styles.input} required/>
+                            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder={intl.formatMessage({ id: 'placeholder_name', defaultMessage: 'Name' })}  className={styles.input} required/>
                         </div>
                         <div className={styles.input_container}>
-                            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" className={styles.input} required/>
+                            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder={intl.formatMessage({ id: 'placeholder_email', defaultMessage: 'Email' })}  className={styles.input} required/>
                         </div>
                         <div className={styles.input_container}>
-                            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone" className={styles.input} required/>
+                            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder={intl.formatMessage({ id: 'placeholder_phone', defaultMessage: 'Phone' })}  className={styles.input} required/>
                         </div>
                         <div className={`${styles.input_container} ${styles.textarea}`}>
-                            <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Message' className={styles.input} required></textarea>
+                            <textarea name="message" value={formData.message} onChange={handleChange} placeholder={intl.formatMessage({ id: 'placeholder_message', defaultMessage: 'Message' })}  className={styles.input} required></textarea>
                         </div>
-                        <button type="submit" className={styles.btn}>Send</button>
+                        <button type="submit" className={styles.btn}><FormattedMessage id='send'/></button>
                     </form>
 
                 </div>

@@ -15,41 +15,48 @@ import ads from '../assets/ads.svg'
 import web from '../assets/web.svg'
 import apps from '../assets/apps.svg'
 import game from '../assets/game.svg'
+import { FormattedMessage } from 'react-intl';
 
 const Data = () => {
   return {
-    services: [{
-      id: 1,
-      name: 'Web Development',
-      title: 'Web Design & Logo',
-      description:
-        'Web designers craft the overall vision & plan for a website layout, ensuring a user-friendly interface and engaging user experience. Professional logo development: Business, Company, or Personal, tailored to reflect your brand identity and values.',
-      image: web,
-    },
-    {
-      id: 2,
-      name: ' Apps Development ',
-      title: ' iOS & Android ',
-      description:
-        'Design software applications to run on mobile devices. Modern and mobile-ready applications that will help you reach all of your marketing goals. From initial concept to launch, we ensure your app is intuitive, functional, and visually appealing.',
-      image: apps,
-    },
-    {
-      id: 3,
-      name: ' Game Development ',
-      title: ' Unity & Unreal Engine ',
-      description:
-        ' Creating games & describes the design, development, and release of a game. Developing unique mobile Android and iOS games. We bring your game ideas to life with immersive graphics, engaging gameplay, and smooth performance across devices.',
-      image: game,
-    },
-    {
-      id: 4,
-      name: ' Desktop Development ',
-      title: ' macOS & Windows ',
-      description:
-        ' Developing robust desktop applications that provide powerful functionality and seamless integration with your existing systems. Our desktop applications are designed for performance, security, and scalability to meet your business needs.',
-      image: ads,
-    },],
+    services: [
+      {
+        id: 1,
+        name: <FormattedMessage id="web_development_service" />,
+        title: <FormattedMessage id="web_design_logo" />,
+        description: (
+          <FormattedMessage id="web_development_description" />
+        ),
+        image: web,
+      },
+      {
+        id: 2,
+        name: <FormattedMessage id="apps_development" />,
+        title: <FormattedMessage id="ios_android" />,
+        description: (
+          <FormattedMessage id="apps_development_description" />
+        ),
+        image: apps,
+      },
+      {
+        id: 3,
+        name: <FormattedMessage id="game_development" />,
+        title: <FormattedMessage id="unity_unreal_engine" />,
+        description: (
+          <FormattedMessage id="game_development_description" />
+        ),
+        image: game,
+      },
+      {
+        id: 4,
+        name: <FormattedMessage id="desktop_development_service" />,
+        title: <FormattedMessage id="macos_windows" />,
+        description: (
+          <FormattedMessage id="desktop_development_description" />
+        ),
+        image: ads,
+      },
+    ],
 
     skills: [
       {
@@ -105,7 +112,7 @@ const Data = () => {
       },
       {
         id: 6,
-        category: 'Branding',
+        category: 'taskflow',
         linkdemo: 'https://www.taskflow-labs.com/',
         linkgit: 'https://nathansport-64440b456c0d.herokuapp.com/acceuil',
         title: 'Kana',

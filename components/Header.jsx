@@ -4,11 +4,14 @@ import { Link } from 'react-scroll';
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { useTheme } from "./ThemeProvider";
+import { useLocale } from "./LocaleProvider";
+import { FormattedMessage } from "react-intl";
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
     const [scrollNav, setScrollNav] = useState(false);
     const [theme, setTheme] = useTheme();
+    const [locale, setLocale] = useLocale();
 
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -42,6 +45,10 @@ export default function Header() {
         setTheme(theme === 'light' ? 'dark' : 'light');
     };
 
+    const toggleLanguage = () => {
+        setLocale(locale === 'fr' ? 'en' : 'fr');
+    }
+
     return (
         <header className={`${scrollNav ? `${styles.scroll_header}` : ""} ${styles.header}`}>
             <nav className={styles.nav}>
@@ -53,27 +60,27 @@ export default function Header() {
                         <ul className={styles.nav_list}>
                             <li>
                                 <Link to="home" smooth={true} duration={500} className={`${styles.nav_link} ${styles.text_cs}`} onClick={handleLinkClick}>
-                                    HOME
+                                    <FormattedMessage id="home"/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="services" smooth={true} duration={500} className={`${styles.nav_link} ${styles.text_cs}`} onClick={handleLinkClick}>
-                                    SERVICES
+                                    <FormattedMessage id="services"/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="skills" smooth={true} duration={500} className={`${styles.nav_link} ${styles.text_cs}`} onClick={handleLinkClick}>
-                                    SKILLS
+                                    <FormattedMessage id="skills"/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="portfolio" smooth={true} duration={500} className={`${styles.nav_link} ${styles.text_cs}`} onClick={handleLinkClick}>
-                                    PORTFOLIO
+                                    <FormattedMessage id="projects"/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to="contact" smooth={true} duration={500} className={`${styles.nav_link} ${styles.text_cs}`} onClick={handleLinkClick}>
-                                    CONTACT
+                                    <FormattedMessage id="contact"/>
                                 </Link>
                             </li>
                             <div className={styles.header_socials}>
@@ -93,6 +100,9 @@ export default function Header() {
                 <div className={styles.nav_btns}>
                     <div className={styles.theme_toggler} onClick={toggleTheme}>
                         {theme === 'light' ? <BsSun /> : <BsMoon />}
+                    </div>
+                    <div className={styles.locale_toggler} onClick={toggleLanguage}>
+                        {locale === 'fr' ? 'Français' : 'English'}
                     </div>
                     <div className={`${showMenu ? `${styles.nav_toggle} ${styles.animate_toggle}` : styles.nav_toggle}`} onClick={handleMenuToggle}>
                         <span></span>

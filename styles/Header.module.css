@@ -95,6 +95,19 @@
     color: #29a385;
 }
 
+.locale_toggler {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 0 10px;
+    gap: 5px;
+}
+
+.locale_toggler:hover {
+    text-decoration: underline;
+}
+
 .theme_toggler {
     font-size: 24px;
     display: flex;

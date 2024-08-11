@@ -177,16 +177,6 @@
     line-height: 1.5rem;
 }
 
-.home_data .text_lg b,
-.home_data .text_sm span {
-    color: #29a385;
-}
-
-.home_data .text-lg b {
-    position: relative;
-    top: -4px;
-}
-
 @media screen and (max-width: 1200px) {
     .container {
         max-width: 960px;
